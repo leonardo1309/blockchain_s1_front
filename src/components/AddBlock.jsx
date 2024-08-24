@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
+import { Button, Form, Modal } from 'react-bootstrap';
 
 const AddBlockModal = ({show, handleClose}) => {
-
-const [show, setShow] = useState(false);
 
   return (
     <>

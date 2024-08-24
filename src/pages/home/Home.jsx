@@ -13,7 +13,7 @@ const Home = () => {
         if(getChain){
             getChain();
         }
-    },[getChain])
+    },[getChain]);
 
 
     const handleShowModal = () => setShowModal(true);
@@ -71,7 +71,7 @@ const Home = () => {
                 })}
             </tbody>
         </Table>
-        <AddBlockModal/>
+        <AddBlock show={showModal} handleClose={handleClose}/>
         <pre>
             {JSON.stringify(data, null, 2)}
         </pre>
